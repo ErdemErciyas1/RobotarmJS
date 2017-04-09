@@ -1,0 +1,89 @@
+<html>
+<script src="robotarm-arm.js"></script>
+    <body>
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <script src="robot-arm.js"></script>
+        <script>
+            // Initialize the robot arm
+            var canvas = document.getElementById("canvas");
+            var robotArm = new RobotArm(canvas);
+            
+            
+            // Either use loadLevel or randomLevel to create a start scene
+            robotArm.loadLevel("exercise 4");
+            
+        
+            // My instructions come here
+            robotArm.grab();
+
+            for(var i= 8; i < 10; i++) {
+              console.log(i);
+              robotArm.moveRight();
+            }
+            robotArm.drop();
+
+            for(var i= 8; i < 10; i++) {
+              console.log(i);
+              robotArm.moveLeft();
+            }
+            robotArm.grab();
+
+            for(var i= 8; i < 10; i++) {
+              console.log(i);
+              robotArm.moveRight();
+            }
+            robotArm.drop();
+
+            for(var i= 8; i < 10; i++) {
+              console.log(i);
+              robotArm.moveLeft();
+            }
+            robotArm.grab();
+
+            for(var i= 8; i < 10; i++) {
+              console.log(i);
+              robotArm.moveRight();
+            }
+            robotArm.drop();
+            robotArm.grab();
+
+            for(var i= 9; i < 10; i++) {
+              console.log(i);
+              robotArm.moveLeft();
+            }
+            robotArm.drop();
+
+            for(var i= 9; i < 10; i++) {
+              console.log(i);
+              robotArm.moveRight();
+            }
+            robotArm.grab();
+
+            for(var i= 9; i < 10; i++) {
+              console.log(i);
+              robotArm.moveLeft();
+            }
+            robotArm.drop();
+
+          for(var i= 9; i < 10; i++) {
+              console.log(i);
+              robotArm.moveRight();
+            }
+            robotArm.grab();
+
+            for(var i= 9; i < 10; i++) {
+              console.log(i);
+              robotArm.moveLeft();
+            }
+            robotArm.drop();
+
+
+            
+robotArm.run()
+robotArm.speed = 200;
+
+
+           
+        </script>
+    </body>
+</html>
